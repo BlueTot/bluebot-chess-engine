@@ -30,6 +30,7 @@ pypy3 -m pip install python-chess
 Lastly, run the engine, and have fun!
 
 ```bash
+cd bluebot-chess-engine
 pypy3 main.py
 ```
 
