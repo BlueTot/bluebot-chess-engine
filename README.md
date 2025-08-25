@@ -1,12 +1,39 @@
-# BlueBotChessEngine
-A python chess bot that started out of a tutorial
+# Bluebot Chess Engine
 
-Used to play on chess.com as:
-- BlueBotChessTest4 : 2096 rating in 10 + 0 rapid
+A ~2000 rated classical minimax chess engine written in python that started out of a tutorial. It used to play on chess.com as `BlueBotChessTest4` with a peak rating of 2096 in 10+0 rapid, and it won against Komodo 17 (2100) on chess.com and Fairy Stockfish 6 (~2100) on lichess in 10+0 rapid.
 
-Latest version won against:
-- Komodo 17 (2100) on chess.com
-- Fairy Stockfish 6 (~2100) on lichess in 10 + 0 rapid
+## Installation / Downloading
+
+First, clone the repository
+
+```bash
+git clone https://github.com/BlueTot/bluetot-chess-engine
+```
+
+Install PyPy if you don't have it already (these instructions are for linux, search online for how to install on other OS's)
+
+```bash
+wget https://downloads.python.org/pypy/pypy3.10-v7.3.15-linux64.tar.bz2
+tar -xvf pypy3.10-v7.3.15-linux64.tar.bz2
+sudo mv pypy3.10-v7.3.15-linux64 /opt/pypy3.10
+sudo ln -s /opt/pypy3.10/bin/pypy3 /usr/local/bin/pypy3
+```
+
+Install Pip for PyPy and install the `chess` library
+
+```bash
+pypy3 -m ensurepip
+pypy3 -m pip install --upgrade pip
+pypy3 -m pip install python-chess
+```
+
+Lastly, run the engine, and have fun!
+
+```bash
+pypy3 main.py
+```
+
+## Features
 
 Latest version: v0.36
 
